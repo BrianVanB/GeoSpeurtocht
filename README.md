@@ -25,10 +25,10 @@ Commando | Beschrijving | Permissie
 /stoptimers | Dit stopt de timer zonder alle spelers terug te zetten | Begeleider
 /freezeall | Bevriest alle spelers op hun plek | Begeleider
 /unfreezeall | Laat alle bevroren spelers weer vrij | Begeleider
-/freeze <speler> | Bevriest de gegeven speler | Begeleider
-/unfreeze <speler> | Laat de gegeven speler weer vrij | Begeleider
+/freeze \<speler\> | Bevriest de gegeven speler | Begeleider
+/unfreeze \<speler\> | Laat de gegeven speler weer vrij | Begeleider
 /tpall | Teleporteert alle spelers naar jouw locatie | Begeleider
-/broadcast | Stuur een bericht naar alle spelers op de server | Begeleider
+/broadcast \<bericht\> | Stuur een bericht naar alle spelers op de server | Begeleider
 
 -----------------
 
