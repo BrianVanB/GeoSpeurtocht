@@ -84,6 +84,9 @@ public class SpeurCommands implements CommandExecutor {
 			if(args.length < 1)
 				return Master.CommandError(sender, "Geen tijd gegeven: " + Master.getCommand("startall").getUsage());
 			
+			if(Manager.Running)
+				return Master.CommandError(sender, "Er is al een speurtocht bezig! Gebruik /stopall om deze eerst te stoppen.");
+			
 			float minutes = 0;
 			try 
 			{
