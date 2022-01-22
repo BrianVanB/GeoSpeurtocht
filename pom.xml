@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.BrianVanB</groupId>
   <artifactId>GeoSpeurtocht</artifactId>
-  <version>1.13.2</version>
+  <version>1.17</version>
   
   <build>
     <plugins>
@@ -27,11 +27,9 @@
    <dependencies>
        <!-- Access to bukkit features -->
        <dependency>
-           <groupId>org.bukkit</groupId>
-           <artifactId>bukkit</artifactId>
-           <version>1.13.2-R0.1-SNAPSHOT</version>
-           <type>jar</type>
-           <scope>provided</scope>
+           <groupId>org.spigotmc</groupId>
+           <artifactId>spigot-api</artifactId>
+           <version>1.17.1-R0.1-SNAPSHOT</version>
        </dependency>
          
    </dependencies>
