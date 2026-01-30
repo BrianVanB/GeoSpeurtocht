@@ -39,8 +39,7 @@ public class FreezeCommands implements CommandExecutor {
 					return Master.CommandError(sender, "Geef een speler om te bevriezen");
 				
 				//Kijk of het een geldige spelersnaam is
-				@SuppressWarnings("deprecation") 
-				Player toFreeze = Master.getServer().getPlayer(args[0]);
+				Player toFreeze = Master.getServer().getPlayerExact(args[0]);
 				if(toFreeze == null)
 					return Master.CommandError(sender, "Speler niet gevonden");
 				
@@ -58,8 +57,7 @@ public class FreezeCommands implements CommandExecutor {
 					return Master.CommandError(sender, "Geef een speler om te bevrijden");
 				
 				//get the targeted player
-				@SuppressWarnings("deprecation") 
-				Player toUnFreeze =  Master.getServer().getPlayer(args[0]);
+				Player toUnFreeze =  Master.getServer().getPlayerExact(args[0]);
 				if(toUnFreeze == null)
 					return Master.CommandError(sender, "Speler niet gevonden");
 				

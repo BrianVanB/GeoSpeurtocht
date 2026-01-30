@@ -2,13 +2,10 @@ package io.github.BrianVanB.SpeurtochtModule;
 
 import org.bukkit.Bukkit;
 import org.bukkit.boss.BarColor;
-import org.bukkit.boss.BarFlag;
 import org.bukkit.boss.BarStyle;
 import org.bukkit.boss.BossBar;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
@@ -17,14 +14,12 @@ import io.github.BrianVanB.GeoSpeurtocht.GeoSpeurtocht;
 public class BossBarTimer implements Listener {
 	
 	private GeoSpeurtocht Master;
-	private SpeurtochtManager Manager;
 	private BossBar Bar;
 	private BukkitTask updater;
 	
-	public BossBarTimer(GeoSpeurtocht master, SpeurtochtManager manager)
+	public BossBarTimer(GeoSpeurtocht master)
 	{
 		Master = master;
-		Manager = manager;
 	}
 	
 	public void Create(int min) 
@@ -44,24 +39,6 @@ public class BossBarTimer implements Listener {
 		Bar.setVisible(false);
 		updater.cancel();
 	}
-	
-//	@EventHandler
-//	private void onLogin(PlayerLoginEvent e)
-//	{
-//		if(Manager.Running)
-//		{
-//			if(e == null)
-//				Master.getLogger().info("Event is NULL");
-//			if(Bar == null)
-//				Master.getLogger().info("Bar is NULL");
-//			Player plToAdd = e.getPlayer();
-//			if(plToAdd == null)
-//				Master.getLogger().info("Player is NULL");
-//
-//			Master.getLogger().info("Adding " + plToAdd + " to " + Bar);
-//		 	Bar.addPlayer(plToAdd);
-//		}
-//	}
 }
 
 class BarUpdater extends BukkitRunnable
