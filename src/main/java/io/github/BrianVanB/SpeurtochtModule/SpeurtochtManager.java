@@ -29,7 +29,7 @@ public class SpeurtochtManager {
 		Startpunt = LoadStartpunt();
 		Running = false;
 		Timers = null;
-		TimerBar = new BossBarTimer(Master, this);
+		TimerBar = new BossBarTimer(Master);
 		
 		cmdExecutor = new SpeurCommands(Master, this);
 		Master.getCommand("setstart").setExecutor(cmdExecutor);

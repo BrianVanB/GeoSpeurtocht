@@ -43,7 +43,7 @@ public class ExtraCommands implements CommandExecutor, Listener {
 		kinderKiller = new ItemStack(Material.STICK);
 		ItemMeta meta = kinderKiller.getItemMeta();
 		meta.setDisplayName("Kinder Killer");
-		meta.addEnchant(Enchantment.ARROW_INFINITE, 1, true);
+		meta.addEnchant(Enchantment.INFINITY, 1, true);
 		kinderKiller.setItemMeta(meta);
 	}
 
