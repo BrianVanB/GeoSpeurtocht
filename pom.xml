@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.BrianVanB</groupId>
   <artifactId>GeoSpeurtocht</artifactId>
-  <version>1.17</version>
+  <version>1.21</version>
   
   <build>
     <plugins>
